@@ -1,0 +1,93 @@
+
+    
+
+
+  .header {
+    width: 100vw;
+    height: 10vh;
+    background-color:grey;
+    text-align: center;
+}
+.body{
+    height: 90vh;
+    width: 100vw;
+    align-content: center;
+    background-image: url("bg_1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.container{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+  
+
+
+#fname{
+    width:380px;
+    height: 29px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+}
+#lname{
+        width:380px;
+        height: 29px;
+        font-size: 16px;
+        padding: 10px;
+        font-weight: bold;
+}
+#address{
+    width:380px;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+}
+#dob{
+    width:380px;
+    height: 29px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+}
+#mobile{
+    width:380px;
+    height: 29px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+}
+#email{
+width:380px;
+height: 29px;
+font-size: 16px;
+padding: 10px;
+font-weight: bold;
+}
+#password{
+width:380px;
+height: 29px;
+font-size: 16px;
+padding: 10px;
+font-weight: bold;
+}
+
+#confirm{
+width:380px;
+height: 29px;
+font-size: 16px;
+padding: 10px;
+font-weight: bold;
+}
+#uname{
+width:380px;
+height: 29px;
+font-size: 16px;
+padding: 10px;
+font-weight: bold;
+}

@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>register page</title>
+        <link rel="stylesheet" href="Styles/register.css" type="text/css"/>
+    </head>
+    <body style="background-image: url(bg_1.jpg)">
+      <center>  
+        <div class="container">
+            <h1  style="color:rgb(215, 216, 212);">Register </h1>
+            <form id="regform"  name="regform" onsubmit="validateform(event)">
+                <div class="register-section">
+                    <div class="register">
+                        <label><b> First Name   :</b> </label>
+                        <input type="text" id="fname" placeholder="name" minlength="5" maxlength="50" required >
+                        
+                    </div>
+                    <br/>
+                    <div class="register">
+                        
+                        <label><b> Last Name   :</b> </label>
+                        <input type="text" id="lname" placeholder="Last name" minlength="5" maxlength="50" required>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <label><b> Address        : </b> </label>
+                        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <label><b> DOB   :</b> </label>
+                        <input type="date" id="dob" name="date" placeholder="DOB" required>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <label><b> Phone No   :</b> </label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Phone number" required>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <label><b> Email            :</b> </label>
+                        <input type="email" id="email"  placeholder="Email address" required>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <label><b> User Name    :</b> </label>
+                        <input type="text" id="uname"  placeholder="User name" required>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <label><b> Password     :</b> </label>
+                        <input type="password" id="password"  placeholder="Password" minlength="5" maxlength="50" required>
+                    </div>
+                    <br/>
+                    
+                    <div class="register">
+                        <label><b> Confirm Password     :</b> </label>
+                        <input type="password" id="confirm password"  placeholder="Confirm password"  required>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <input type="checkbox" id="agree" name="agree" value="yes">
+                        <label for="agree">  I agree to the <a href="#">terms and conditions</a> of the website</label>
+                    </div>
+                    <br/>
+                    <div class="register">
+                        <a href="booking.html"><button type="button" id="register">Submit</button></a>
+                    </div>
+                </div>
+            </form>
+            
+    </div>
+<script>
+    function validate(e){
+            
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            
+    
+            let database = {
+                username :"user@123",
+                password:"sp123"
+            }
+            if(username == database.username & password == database.password){
+            }
+            else{
+                error.innerHTML = "username or password is wrong"
+                e.preventDefault()
+            }
+        }
+        </script>
+    </body>
+                 
+                   
+    
+</html>

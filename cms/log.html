@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(sp.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*   object-fit: contain; */
+
+        }
+        .box{
+            width: 40vw;
+            height: 35vh;
+           
+        }
+       .container-fluid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 345px;
+       }
+    </style>
+
+    <div class="container-fluid" style="min-height: 60vh;">
+        <div class="row">
+            <div class="box">
+
+                <div class="col-sm-6 offset-sm-3">
+                    <h1 class="text-center">    Login   </h1><br>
+                    <form action="book.html" onsubmit="validate(event)">
+                        <label >USER NAME </label>
+                        <input type="text" id="username" placeholder="name" required><br><br>
+                        <label>PASSWORD  </label>
+                        <input type="text" id="password" placeholder="password" required><br><br>
+                        <!--<input type="text" id="cpassword" placeholder="confirm password"><br><br>-->
+                        <h1 id="error"></h1>
+                        <button class="btn btn-sucess" type="submit" onsubmit="book.html">SUBMIT</button>
+                </div>
+
+                </form>
+
+
+                <script>
+                    function validate(e) {
+                        
+                        let error = document.getElementById('error')
+                        let username = document.getElementById('username').value;
+                        let password = document.getElementById('password').value;
+
+
+                        let database = {
+                            username: "user@1",
+                            password: "sp123"
+                        }
+                        if (username == database.username & password == database.password) {
+                        }
+                        else {
+                            error.innerHTML = "username or password is wrong"
+                            e.preventDefault()
+                        }
+                    }
+                </script>
+</body>
+
+</html>

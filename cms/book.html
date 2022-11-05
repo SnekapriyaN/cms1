@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100vw;
+            height: 10vh;
+            background-color:grey;
+            text-align: center;
+        }
+        .body{
+            height: 90vh;
+            width: 100vw;
+            align-content: center;
+            background-image: url("riding-a-cap.gif");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .mid-container{
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body background="">
+    <div class="header">
+<h1> Book your ride</h1>
+    </div>
+    <div class="body">
+        <form onsubmit="">
+            <div>
+                <div class="mid-container">
+                    <div id="pickup">
+                        <label><b> PICK UP</b> </label>
+                        <input type="text" id="pickup" placeholder="Pick-up location">
+                    </div>
+                    <br/>
+                    <div>
+                        <label><B>DROP OFF</B></label>
+                        <input type="text" id="drop" placeholder="Drop-off location">
+                    </div>
+                    <br/>
+                    <div>
+                        <label><b> Date</b></label>
+                        <input type="date" id="date" placeholder="pick-up date">
+                    </div>
+                    <br/>
+                    <div>
+                        <label> <b>Time</b> </label>
+                        <input type="time" id="time" placeholder="pick-up time">
+                    </div>
+                    <br/>
+                    <div>
+                        <label> <b>No. of passengers</b></label>
+                        <input type="number" id="passenger" placeholder="passenger no">
+                    </div>
+                    <br/>
+                    <div>
+                        <button type="button" id="search">Search</button>
+                        <form action="/action_page.php" method="post">
+      
+    </form>
+    </div>
+</body>
+
+</html>
